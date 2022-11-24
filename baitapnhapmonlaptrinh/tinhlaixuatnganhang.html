@@ -8,11 +8,13 @@
 </head>
 <body>
     <script>
-        let tienvay = prompt("số tiền vay");
-        let laixuat = prompt("lãi xuất ngân hàng");
-        let sonam = prompt("số năm ");
-        let sotien = tienvay*laixuat*sonam;
-        alert ( sotien + " triệu đồng");
+        var  sotienvay= parseInt(prompt("số tiền cần vay 'triệu'"));
+        var  laisuat= parseInt(prompt("nhập lãi suất ngân hàng '%' "));
+         console.log(typeof(laisuat));
+        var  sonam=parseInt(prompt("nhập số năm vay"));
+        var  tienlai=(sotienvay*laisuat)/100;
+       var  sotien= sotienvay+(tienlai*sonam);
+         alert("số tiền phải trả " + sotien + " Triệu đồng");
     </script>
 </body>
 </html>
